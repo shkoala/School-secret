@@ -1,4 +1,4 @@
-/* The Midnight Feast — scenes 01–02. */
+/* The Midnight Feast — scenes 01–03. */
 window.FEAST={
   "version": 1,
   "chapters": [
@@ -469,6 +469,233 @@ window.FEAST={
       ],
       "resolution": "The headmaster turns towards the camera. “I know you are still here. You have already missed the welcome speech rehearsal.” You slip into the old library. A note on the door reads: FIND THE SCHOOL CHARTER.",
       "nextClue": "Before choosing an escape route, you need to know the rules."
+    },
+    {
+      "id": "library",
+      "title": "The forgotten library",
+      "short": "Search",
+      "location": "The old library",
+      "scene": "library",
+      "time": "23:06",
+      "endTime": "23:11",
+      "speaker": "leo",
+      "intro": "The library has a locked archive drawer. On the reading table lies a tiny model of this room. A note says: “Describe what you see. The correct descriptions will open the archive.”",
+      "objective": "Find the room model, a class photograph and the school charter. Use all eight place prepositions to open the archive.",
+      "searchLead": "Search the reading table, the bookcase and the fireplace.",
+      "hotspots": [
+        {
+          "id": "model",
+          "label": "The room model",
+          "x": 63,
+          "y": 74,
+          "asset": "chest",
+          "title": "THE READING-TABLE MODEL",
+          "body": "<p>A model room sits in an old display box. A reference picture will appear beside each location question.</p><p>Use <strong>in front of, on, in, under, next to, behind, opposite, above</strong>.</p>",
+          "inventory": null,
+          "size": 13
+        },
+        {
+          "id": "photo",
+          "label": "The old class photograph",
+          "x": 32,
+          "y": 48,
+          "asset": "photo",
+          "title": "CLASS OF 1926",
+          "body": "<p>A photograph shows Mr Vale and a sixteen-year-old boy named <strong>Sam Reed</strong>. You saw both of them in the corridor tonight.</p><p>Two later reunion photographs, from 1956 and 1986, show the same former pupils. None has aged.</p>",
+          "inventory": "photo",
+          "size": 11
+        },
+        {
+          "id": "charter",
+          "label": "The school charter",
+          "x": 13,
+          "y": 68,
+          "asset": "blue-book",
+          "title": "THE CHARTER OF BLACKTHORN ACADEMY",
+          "body": "<p><strong>1.</strong> The crypt opens every Halloween at 23:00. The boundary around the school then closes. Doors and windows cannot take a living visitor outside.</p><p><strong>2.</strong> The host and his guests cannot harm living visitors before midnight.</p><p><strong>3.</strong> A living hand must restore the first school bell and ring it before midnight. Its sound ends the feast, returns the host to the crypt and frees the students under his spell.</p><p><strong>4.</strong> The original clapper also opens the crypt. It cannot be destroyed.</p>",
+          "inventory": "charter",
+          "size": 12
+        }
+      ],
+      "tasks": [
+        {
+          "id": "3-1",
+          "type": "input",
+          "prompt": "There ___ a candle on the desk.",
+          "answer": [
+            "is"
+          ],
+          "hint": "A candle is singular.",
+          "explanation": "There is + a singular noun.",
+          "tag": "There is / are",
+          "context": "",
+          "diagram": "on"
+        },
+        {
+          "id": "3-2",
+          "type": "input",
+          "prompt": "There ___ two books under the desk.",
+          "answer": [
+            "are"
+          ],
+          "hint": "Two books are plural.",
+          "explanation": "There are + plural nouns.",
+          "tag": "There is / are",
+          "context": "",
+          "diagram": "under"
+        },
+        {
+          "id": "3-3",
+          "type": "input",
+          "prompt": "The candle is ___ the desk.",
+          "answer": [
+            "on"
+          ],
+          "hint": "The base of the candle touches the top surface.",
+          "explanation": "On describes contact with a surface.",
+          "tag": "Describe the model",
+          "context": "",
+          "diagram": "on"
+        },
+        {
+          "id": "3-4",
+          "type": "input",
+          "prompt": "The key is ___ the glass jar.",
+          "answer": [
+            "in"
+          ],
+          "hint": "The key is inside the container.",
+          "explanation": "In describes a position inside something.",
+          "tag": "Describe the model",
+          "context": "",
+          "diagram": "in"
+        },
+        {
+          "id": "3-5",
+          "type": "input",
+          "prompt": "The books are ___ the desk.",
+          "answer": [
+            "under"
+          ],
+          "hint": "Look below the desktop.",
+          "explanation": "Under means below something.",
+          "tag": "Describe the model",
+          "context": "",
+          "diagram": "under"
+        },
+        {
+          "id": "3-6",
+          "type": "input",
+          "prompt": "The mask is ___ the jar.",
+          "answer": [
+            "next to",
+            "beside"
+          ],
+          "hint": "They are side by side. Use the target phrase from the model.",
+          "explanation": "Next to means beside.",
+          "tag": "Describe the model",
+          "context": "",
+          "diagram": "next to"
+        },
+        {
+          "id": "3-7",
+          "type": "input",
+          "prompt": "The photograph is ___ the candle.",
+          "answer": [
+            "behind"
+          ],
+          "hint": "The candle partly hides the photograph.",
+          "explanation": "Behind: farther away from the viewer.",
+          "tag": "Describe the model",
+          "context": "",
+          "diagram": "behind"
+        },
+        {
+          "id": "3-8",
+          "type": "input",
+          "prompt": "The portrait is ___ the desk.",
+          "answer": [
+            "above"
+          ],
+          "hint": "There is a gap between the picture and the desk.",
+          "explanation": "Above: higher, with no contact.",
+          "tag": "Describe the model",
+          "context": "",
+          "diagram": "above"
+        },
+        {
+          "id": "3-9",
+          "type": "input",
+          "prompt": "The chest is ___ the desk.",
+          "answer": [
+            "in front of"
+          ],
+          "hint": "The chest is on the viewer’s side of the desk.",
+          "explanation": "In front of: closer to the viewer.",
+          "tag": "Describe the model",
+          "context": "",
+          "diagram": "in front of"
+        },
+        {
+          "id": "3-10",
+          "type": "input",
+          "prompt": "The two doors are ___ each other.",
+          "answer": [
+            "opposite"
+          ],
+          "hint": "They face each other across the room.",
+          "explanation": "Opposite: facing across a space.",
+          "tag": "Describe the model",
+          "context": "",
+          "diagram": "opposite"
+        },
+        {
+          "id": "3-11",
+          "type": "order",
+          "prompt": "Ask about the archive drawer.",
+          "words": [
+            "a diary",
+            "is",
+            "in the drawer",
+            "there"
+          ],
+          "answer": "is there a diary in the drawer",
+          "hint": "For a question, put is before there.",
+          "explanation": "Is there a diary in the drawer?",
+          "tag": "There is question"
+        },
+        {
+          "id": "3-12",
+          "type": "input",
+          "prompt": "You check the window ledge: it is empty. Complete: There ___ any keys on the ledge.",
+          "answer": [
+            "aren't",
+            "are not"
+          ],
+          "hint": "Keys are plural; make the sentence negative.",
+          "explanation": "There aren’t any keys on the ledge.",
+          "tag": "There are negative",
+          "context": ""
+        }
+      ],
+      "production": [
+        {
+          "prompt": "Describe two places in the room model. Use there is and there are.",
+          "model": "There is a portrait above the desk. There are two books under the desk."
+        },
+        {
+          "prompt": "Ask a question about the library. Then give a negative answer.",
+          "model": "Are there any keys on the ledge? No, there aren’t."
+        }
+      ],
+      "reward": [
+        "photo",
+        "charter",
+        "samnote"
+      ],
+      "resolution": "The archive drawer opens. Inside, you find a note signed S.R. It warns: “The main entrance is a trap. The five seats in the hall are for you.” The charter proves that an ordinary door key cannot get you out.",
+      "nextClue": "S.R. knows a different way. But can you trust the person behind those initials?",
+      "special": "archive"
     }
   ],
   "cast": {
@@ -512,6 +739,21 @@ window.FEAST={
       "asset": "note",
       "detail": "Five registrations, submitted last week. Who organised this challenge?"
     },
+    "photo": {
+      "name": "Class of 1926",
+      "asset": "photo",
+      "detail": "Sam Reed and the headmaster look exactly as they do tonight. A camera records vampires; a mirror does not."
+    },
+    "charter": {
+      "name": "The school charter",
+      "asset": "blue-book",
+      "detail": "The boundary closes at 23:00. Living guests are protected until midnight. A living hand must restore the first bell and ring it before midnight."
+    },
+    "samnote": {
+      "name": "A note from S.R.",
+      "asset": "note",
+      "detail": "A hidden note signed S.R. warns that the main entrance is a trap. Its author is curious about stars, interested in astronomy, good at card tricks and scared of deep water. Which former student wrote it?"
+    },
     "founder": {
       "name": "The founder’s portrait",
       "asset": "vale",
@@ -529,5 +771,79 @@ window.FEAST={
     ],
     "epilogue": "The next school morning, a notice appears on the office door: THE HEADMASTER WILL NOT BE RETURNING. PLEASE DO NOT OPEN THE BASEMENT."
   },
-  "release": "Scenes 01–02"
+  "release": "Scenes 01–03",
+  "diagramBounds": {
+    "candle": {
+      "x": 0,
+      "y": 0,
+      "w": 298,
+      "h": 276,
+      "width": 313,
+      "height": 314
+    },
+    "blue-book": {
+      "x": 29,
+      "y": 0,
+      "w": 285,
+      "h": 285,
+      "width": 314,
+      "height": 314
+    },
+    "diary": {
+      "x": 34,
+      "y": 24,
+      "w": 279,
+      "h": 287,
+      "width": 313,
+      "height": 314
+    },
+    "jar": {
+      "x": 62,
+      "y": 0,
+      "w": 195,
+      "h": 268,
+      "width": 314,
+      "height": 314
+    },
+    "gold-key": {
+      "x": 40,
+      "y": 43,
+      "w": 255,
+      "h": 256,
+      "width": 314,
+      "height": 314
+    },
+    "mask": {
+      "x": 3,
+      "y": 76,
+      "w": 307,
+      "h": 221,
+      "width": 313,
+      "height": 314
+    },
+    "photo": {
+      "x": 38,
+      "y": 46,
+      "w": 262,
+      "h": 242,
+      "width": 314,
+      "height": 313
+    },
+    "vale": {
+      "x": 4,
+      "y": 0,
+      "w": 435,
+      "h": 433,
+      "width": 443,
+      "height": 443
+    },
+    "chest": {
+      "x": 20,
+      "y": 0,
+      "w": 282,
+      "h": 274,
+      "width": 313,
+      "height": 313
+    }
+  }
 };
